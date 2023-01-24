@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactional Email</title>
+</head>
+
+<style>
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        #thanks-text {
+            text-align: center;
+        }
+
+        .order-container p {
+            text-align: center;
+        }
+
+        .statement-container,
+        .order-table {
+            padding: 0 10px;
+        }
+
+        .address {
+            padding: 0 8px;
+        }
+    }
+</style>
+
+<body style="background-color:#f5f5f5">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+                    <!--Pure Prescriptions Logo-->
+                    <tr>
+                        <td>
+                            <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td>
+                                        <img src="./logo.png" alt="logo">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Prescriptions Logo-->
+                    <!--Thank you banner-->
+                    <tr>
+                        <td>
+                            <table class="thank-you-container" width="100%" align="center"
+                                style="background-color:#505050;color: white;
+                                font-family:'Roboto', Arial, sans-serif;font-size: 30px;border-radius: 10px 10px 0 0;margin-top:20px;">
+                                <tr>
+                                    <td style="padding:26px 48px; padding: 20px 0; text-align: center;">
+                                        <p>Thank you for your order</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Thank you banner-->
+                    <!--Letter-->
+                    <tr>
+                        <td>
+                            <table class="statement-container" width="100%"
+                                style="background-color:white; font: 16px Roboto, sans-serif;color: #737373;"
+                                cellspacing="20">
+                                <tr>
+                                    <td>
+                                        <p>Hi Abraham,</p>
+                                        <p style="padding:20px 0">
+                                            Just to let you know — we've received your order #1-1536862,
+                                            and it is now being processed:
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Letter-->
+                    <!--Order-->
+                    <tr>
+                        <td>
+                            <table class="order-container" width="100%"
+                                style="background-color:white; font: 600 18px Roboto, sans-serif;padding: 0 20px;"
+                                cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <p>[Order #1-2345678] (July 21, 2022)</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Order-->
+                    <!--Open Spending-->
+                    <tr>
+                        <td>
+                            <table width="100%" style="background-color:white; padding: 0 20px" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <table width="100%" class="order-table" cellpadding="2" cellspacing="0"
+                                            style="border:0px solid #737373;font: 16px Roboto, sans-serif;color: #737373;">
+                                            <tr align="left">
+                                                <th style="border:1px solid #737373">Product</th>
+                                                <th style="border:1px solid #737373">Quantity</th>
+                                                <th style="border:1px solid #737373">Price</th>
+                                            </tr>
+                                            <tr style="border:1px solid #737373">
+                                                <td style="border:1px solid #737373">
+                                                    Women's Nutrients - 180 Capsules <br>
+                                                    <b>Size:</b>180 Capsules
+                                                </td>
+                                                <td style="border:1px solid #737373">1</td>
+                                                <td style="border:1px solid #737373">$65.30</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2"
+                                                    style="vertical-align:middle;text-align: left;border:1px solid #737373">
+                                                    Subtotal:</th>
+                                                <td style="vertical-align:middle;border:1px solid #737373">
+                                                    $65.30</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2"
+                                                    style="vertical-align:middle;text-align: left;border:1px solid #737373">
+                                                    Discount:
+                                                </th>
+                                                <td style="vertical-align:middle;border:1px solid #737373">-$6.53
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2"
+                                                    style="vertical-align:middle;text-align: left;border:1px solid #737373">
+                                                    Shipping:</th>
+                                                <td style="vertical-align:middle;border:1px solid #737373">Free Shipping
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2"
+                                                    style="vertical-align:middle;text-align: left;border:1px solid #737373">
+                                                    Tax:</th>
+                                                <td style="vertical-align:middle;border:1px solid #737373">$0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2"
+                                                    style="vertical-align:middle;text-align: left;border:1px solid #737373">
+                                                    Payment Method:</th>
+                                                <td style="vertical-align:middle;border:1px solid #737373">
+                                                    johnsmith@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2"
+                                                    style="vertical-align:middle;text-align: left;border:1px solid #737373">
+                                                    Total:</th>
+                                                <td style="vertical-align:middle;border:1px solid #737373">$58.77</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Spending-->
+                    <!--Open Address-->
+                    <tr>
+                        <td>
+                            <table width="100%" class="address" style="background-color:white" border="0"
+                                cellspacing="20">
+                                <tr>
+                                    <td>
+                                        <table class="billing-address" style="background-color:white" align="left">
+                                            <tr>
+                                                <td>
+                                                    <h3 style="font: 600 16px Roboto, sans-serif">Billing Address</h3>
+                                                    <p style="font: 14px Roboto, sans-serif; color: #737373">
+                                                        Abe Paniagua <br>
+                                                        123 NW 42th St, <br>
+                                                        Miami, FL 33166 <br>
+                                                        809-470-4152 <br>
+                                                        johnsmith@gmail.com
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="shipping-address" style="background-color:white" align="right">
+                                            <tr>
+                                                <td>
+                                                    <h3 style="font: 600 16px Roboto, sans-serif">Shipping Address</h3>
+                                                    <p style="font: 14px Roboto, sans-serif; color: #737373">
+                                                        Abe Paniagua <br>
+                                                        123 NW 42th St, <br>
+                                                        Miami, FL 33166 <br>
+                                                        809-470-4152 <br>
+                                                        johnsmith@gmail.com
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Address-->
+                    <!--Thanks-->
+                    <tr>
+                        <td>
+                            <table class="thanks-pureprescriptions" width="100%" style="background-color:white"
+                                border="0" cellspacing="20">
+                                <p id="thanks-text" style="font-family:sans-serif; color:#767676; padding: 10px 0;">
+                                    Thanks for using
+                                    <a href="#" style="text-decoration:none;color: blue;">pureprescriptions.com!</a>
+                                </p>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Close Thanks-->
+                    <tr>
+                        <td>
+                            <table width="100%" style="background-color:white" border="0" cellspacing="0"
+                                cellpadding="0">
+                                <footer
+                                    style="text-align:center;font-family: sans-serif ;font-size: 12px;margin: 15px;color:#696969;">
+                                    Pure
+                                    Prescriptions,
+                                    Inc.
+                                </footer>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
